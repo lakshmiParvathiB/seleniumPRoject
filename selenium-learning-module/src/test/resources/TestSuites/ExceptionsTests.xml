@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Exceptions Tests Suite" verbose="1">
+
+<test name="NotVisisbleTest" >
+  <parameter name="browser" value="chrome" ></parameter>
+  <classes>
+       <class name="com.herokuapp.theinternet.ExceptionsTests" >
+            <methods>
+<!--                 <include name="staleElementTest"> </include> -->
+                <include name="disabledElementTest"> 
+                </include>
+             </methods>
+             </class>
+   </classes>
+ </test>
+  
+  </suite>
